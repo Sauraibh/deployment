@@ -1,0 +1,179 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Elite Landing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; font-family: Arial, sans-serif; }
+
+    body {
+      background: #0e0e11;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 40px;
+      position: fixed;
+      width: 100%;
+      background: rgba(0,0,0,0.7);
+      backdrop-filter: blur(10px);
+      z-index: 100;
+    }
+
+    .nav a {
+      margin-left: 20px;
+      color: #aaa;
+      text-decoration: none;
+    }
+
+    .nav a:hover { color: #fff; }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 40px;
+      background: linear-gradient(135deg, #111, #1a1a2e);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      max-width: 700px;
+    }
+
+    .hero p {
+      margin: 20px 0;
+      color: #bbb;
+    }
+
+    .hero button {
+      width: 200px;
+      padding: 15px;
+      background: #6c5ce7;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    section {
+      padding: 100px 40px;
+      text-align: center;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: #16161c;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .cta input {
+      padding: 15px;
+      width: 260px;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    .cta button {
+      padding: 15px 25px;
+      background: #00b894;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .footer {
+      padding: 20px;
+      text-align: center;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="logo">Elite</div>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#about">About</a>
+    <a href="#cta">Access</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Stop Wasting Time. Build Something That Matters.</h1>
+  <p>Execution beats ideas. Always.</p>
+  <button onclick="scrollToCTA()">Get Early Access</button>
+</section>
+
+<section id="features">
+  <h2>Why This Exists</h2>
+  <div class="feature-grid">
+    <div class="card">
+      <h3>Speed</h3>
+      <p>Move faster than your competition can react.</p>
+    </div>
+    <div class="card">
+      <h3>Clarity</h3>
+      <p>No noise. No fluff. Just leverage.</p>
+    </div>
+    <div class="card">
+      <h3>Power</h3>
+      <p>Control systems instead of being controlled by them.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About</h2>
+  <p>Built for builders. Not spectators.</p>
+</section>
+
+<section id="cta" class="cta">
+  <h2>Join Before the Crowd</h2>
+  <input type="email" id="email" placeholder="Enter your email">
+  <button onclick="submitEmail()">Notify Me</button>
+  <p id="msg"></p>
+</section>
+
+<footer class="footer">
+  © 2026 Elite Systems
+</footer>
+
+<script>
+  function scrollToCTA() {
+    document.getElementById("cta").scrollIntoView({ behavior: "smooth" });
+  }
+
+  function submitEmail() {
+    const email = document.getElementById("email").value;
+    const msg = document.getElementById("msg");
+
+    if (!email.includes("@")) {
+      msg.textContent = "Enter a valid email.";
+      msg.style.color = "red";
+      return;
+    }
+
+    msg.textContent = "You're on the list.";
+    msg.style.color = "lightgreen";
+    console.log("Captured email:", email);
+  }
+</script>
+
+</body>
+</html>
