@@ -1,77 +1,101 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syncx | Elevate Your Essential</title>
+    <title>Tanj | Real Toffee. Real Soft.</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Pacifico&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+        body { font-family: 'Outfit', sans-serif; }
+        .cursive { font-family: 'Pacifico', cursive; }
+        .bg-toffee { background-color: #78350f; }
+        .text-caramel { color: #d97706; }
+        .blob { border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%; }
     </style>
 </head>
-<body class="bg-white text-slate-900">
+<body class="bg-[#fffcf5] text-amber-900">
 
-    <nav class="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
-        <div class="text-2xl font-black tracking-tighter">SYNCX</div>
-        <div class="space-x-8 hidden md:block font-medium text-sm uppercase tracking-widest">
-            <a href="#features" class="hover:text-blue-600 transition">Features</a>
-            <a href="#product" class="hover:text-blue-600 transition">The Shirt</a>
-            <a href="#" class="bg-black text-white px-6 py-2 rounded-full hover:bg-slate-800 transition">Shop Now</a>
+    <nav class="flex items-center justify-between px-6 py-4 max-w-6xl mx-auto">
+        <div class="text-3xl font-extrabold tracking-tight text-amber-900">TANJ<span class="text-orange-500">.</span></div>
+        <div class="hidden md:flex space-x-8 font-semibold text-sm">
+            <a href="#flavors" class="hover:text-orange-600 transition">Flavors</a>
+            <a href="#story" class="hover:text-orange-600 transition">Our Story</a>
+            <a href="#" class="bg-amber-900 text-white px-6 py-2 rounded-full hover:bg-orange-700 transition shadow-lg">Buy Now</a>
         </div>
     </nav>
 
-    <header class="hero-gradient text-white py-20 px-8">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6">
-                <span class="text-blue-400 font-bold tracking-widest uppercase text-sm">New Arrival</span>
-                <h1 class="text-6xl md:text-8xl font-black leading-tight">SYNCX <br>ORIGINAL.</h1>
-                <p class="text-slate-400 text-lg max-w-md">
-                    Engineered for the modern minimalist. 100% Organic Pima Cotton. A fit that stays perfect after every wash.
+    <header class="relative px-6 py-12 md:py-24 overflow-hidden">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="z-10">
+                <span class="inline-block bg-orange-100 text-orange-700 px-4 py-1 rounded-full text-sm font-bold mb-4">Hand-pulled in small batches</span>
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+                    The toffee that <br>
+                    <span class="text-orange-500 cursive font-normal">melts</span> your heart.
+                </h1>
+                <p class="text-lg text-amber-800/80 mb-8 max-w-md">
+                    No teeth-breakers here. Tanj is crafted with grass-fed butter and slow-cooked cane sugar for a snap that turns into silk.
                 </p>
-                <div class="pt-4">
-                    <button class="bg-white text-black px-10 py-4 rounded-sm font-bold uppercase tracking-tighter hover:bg-blue-500 hover:text-white transition-all duration-300">
-                        Order Yours — $45
+                <div class="flex gap-4">
+                    <button class="bg-orange-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-xl shadow-orange-200">
+                        Taste the Magic
                     </button>
                 </div>
             </div>
-            <div class="relative">
-                <div class="bg-slate-800 aspect-square rounded-2xl flex items-center justify-center border border-slate-700 shadow-2xl">
-                    <span class="text-slate-500 italic">[Product Image: Syncx Black T-Shirt]</span>
+            
+            <div class="relative flex justify-center">
+                <div class="blob w-72 h-72 md:w-96 md:h-96 bg-orange-200 absolute -z-10 animate-pulse"></div>
+                <div class="bg-amber-100 w-full aspect-square rounded-3xl rotate-3 flex items-center justify-center border-4 border-white shadow-2xl">
+                     <span class="text-amber-800 font-bold italic">[Image: Golden Toffee Brittle]</span>
                 </div>
             </div>
         </div>
     </header>
 
-    <section id="features" class="py-24 px-8 max-w-7xl mx-auto">
-        <div class="grid md:grid-cols-3 gap-16">
-            <div class="space-y-4">
-                <div class="h-1 w-12 bg-blue-600"></div>
-                <h3 class="font-bold text-xl">Perfect Weight</h3>
-                <p class="text-slate-500">220 GSM fabric that provides a premium heavy feel while remaining breathable for daily wear.</p>
+    <section id="flavors" class="bg-white py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold mb-4">Choose your Tanj.</h2>
+                <p class="text-amber-700">Three simple ingredients. Infinite joy.</p>
             </div>
-            <div class="space-y-4">
-                <div class="h-1 w-12 bg-blue-600"></div>
-                <h3 class="font-bold text-xl">Pre-Shrunk</h3>
-                <p class="text-slate-500">Our signature "Sync-Fit" technology ensures the shirt holds its shape, wash after wash.</p>
-            </div>
-            <div class="space-y-4">
-                <div class="h-1 w-12 bg-blue-600"></div>
-                <h3 class="font-bold text-xl">Sustainable</h3>
-                <p class="text-slate-500">Ethically sourced and produced using 40% less water than traditional manufacturing.</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-3xl bg-amber-50 hover:bg-orange-50 transition border border-transparent hover:border-orange-200 group">
+                    <div class="text-4xl mb-4">🧂</div>
+                    <h4 class="text-xl font-bold mb-2">Sea Salt Classic</h4>
+                    <p class="text-sm text-amber-800/70 mb-4">The one that started it all. Flaky Maldon salt meets deep caramel.</p>
+                    <span class="font-bold text-orange-600 group-hover:underline cursor-pointer">Add to Box +</span>
+                </div>
+                <div class="p-8 rounded-3xl bg-amber-50 hover:bg-orange-50 transition border border-transparent hover:border-orange-200 group">
+                    <div class="text-4xl mb-4">☕</div>
+                    <h4 class="text-xl font-bold mb-2">Espresso Crunch</h4>
+                    <p class="text-sm text-amber-800/70 mb-4">Infused with dark roast beans for a sophisticated morning kick.</p>
+                    <span class="font-bold text-orange-600 group-hover:underline cursor-pointer">Add to Box +</span>
+                </div>
+                <div class="p-8 rounded-3xl bg-amber-50 hover:bg-orange-50 transition border border-transparent hover:border-orange-200 group">
+                    <div class="text-4xl mb-4">🥥</div>
+                    <h4 class="text-xl font-bold mb-2">Toasted Coconut</h4>
+                    <p class="text-sm text-amber-800/70 mb-4">Tropical, buttery, and incredibly light. A summer favorite.</p>
+                    <span class="font-bold text-orange-600 group-hover:underline cursor-pointer">Add to Box +</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-slate-50 py-16 px-8 border-t border-slate-200">
-        <div class="max-w-7xl mx-auto text-center space-y-8">
-            <h2 class="text-3-xl font-bold">Join the Syncx movement.</h2>
-            <div class="flex flex-col md:flex-row justify-center items-center gap-4">
-                <input type="email" placeholder="Enter your email" class="px-6 py-3 border border-slate-300 rounded-sm w-full md:w-80">
-                <button class="bg-black text-white px-8 py-3 rounded-sm w-full md:w-auto hover:bg-slate-800">Subscribe</button>
+    <section class="bg-amber-900 text-amber-50 py-16 text-center">
+        <p class="cursive text-3xl mb-4">"Literally the best thing I've ever put in my mouth."</p>
+        <p class="uppercase tracking-widest text-sm font-bold opacity-60">— Every Customer, Probably</p>
+    </section>
+
+    <footer class="py-12 px-6 text-center">
+        <div class="max-w-6xl mx-auto">
+            <p class="font-bold text-amber-900 mb-4">TANJ CONFECTIONERY</p>
+            <div class="flex justify-center gap-6 text-sm text-amber-700 mb-8">
+                <a href="#">Instagram</a>
+                <a href="#">Wholesale</a>
+                <a href="#">Contact</a>
             </div>
-            <p class="text-slate-400 text-xs mt-8">© 2026 SYNCX APPAREL CO. ALL RIGHTS RESERVED.</p>
+            <p class="text-xs text-amber-600/50">Made with 100% real butter. No corn syrup. No nonsense.</p>
         </div>
     </footer>
 
